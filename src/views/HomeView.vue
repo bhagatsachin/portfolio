@@ -1,9 +1,10 @@
 <script setup lang="ts">
-import TheWelcome from '../components/TheWelcome.vue'
 </script>
 
 <template>
-  <main>
-    <TheWelcome />
+  <main class="grow  bg-pink-100">
+    <div class="">
+      some
+    </div>
   </main>
 </template>
