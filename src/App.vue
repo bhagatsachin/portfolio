@@ -5,13 +5,13 @@ import HelloWorld from './components/HelloWorld.vue'
 
 <template>
   <header>
-
-    <div class="wrapper bg-neutral-200">
+    <!-- Add navbar here if needed -->
+    <!-- <div class="wrapper bg-neutral-200">
       <nav>
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
-    </div>
+    </div> -->
   </header>
 
   <RouterView />
