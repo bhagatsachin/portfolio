@@ -1,6 +1,7 @@
 <script setup lang="ts">
 import _ from 'lodash'
-const props = defineProps<{
+//const props = 
+defineProps<{
     projectName: string;
     images: string[];
     videos?: string[];
@@ -10,11 +11,12 @@ const props = defineProps<{
 <template>
     <div class="mx-auto">
 
-        <div :onclick="`${projectName}.showModal()`" class="cursor-pointer mx-auto card max-w-96 bg-base-100 shadow-xl">
+        <div :onclick="`${projectName}.showModal()`"
+            class="cursor-pointer mx-auto card max-w-96 bg-indigo-400 shadow-xl">
             <figure><img :src="images[0]" alt="Shoes" />
             </figure>
             <div class="card-body">
-                <h2 class="card-title">
+                <h2 class="card-title text-black">
                     {{ _.startCase(projectName) }}
                 </h2>
                 <!-- <p>If a dog chews shoes whose shoes does he choose?</p>
@@ -45,7 +47,7 @@ const props = defineProps<{
                     </div>
                     <div :id="`${projectName}_${index}`" v-for="(image, index) in videos ?? []" :key="index"
                         class="carousel-item max-h-full w-full">
-                        <video controls autoplay class="object-scale-down max-h-[75dvh] mx-auto">
+                        <video controls muted autoplay class="object-scale-down max-h-[75dvh] mx-auto">
                             <source :src="image" type="video/mp4">
                         </video>
                     </div>
