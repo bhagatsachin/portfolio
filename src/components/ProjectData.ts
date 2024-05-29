@@ -43,81 +43,172 @@ import render02 from '@/assets/projects/render/render-02.jpg'
 import render03 from '@/assets/projects/render/render-03.jpeg'
 import render04 from '@/assets/projects/render/render-04.jpeg'
 
+import masterBedroom01 from '@/assets/projects/master-bedroom/master-bedroom-01.jpeg'
+import masterBedroom02 from '@/assets/projects/master-bedroom/master-bedroom-02.jpeg'
+import masterBedroom03 from '@/assets/projects/master-bedroom/master-bedroom-03.jpeg'
+import masterBedroom04 from '@/assets/projects/master-bedroom/master-bedroom-04.jpeg'
+import masterBedroom05 from '@/assets/projects/master-bedroom/master-bedroom-05.jpeg'
+import masterBedroom06 from '@/assets/projects/master-bedroom/master-bedroom-06.jpeg'
+import masterBedroom07 from '@/assets/projects/master-bedroom/master-bedroom-07.jpeg'
+import masterBedroom08 from '@/assets/projects/master-bedroom/master-bedroom-08.jpeg'
+import masterBedroom09 from '@/assets/projects/master-bedroom/master-bedroom-09.jpeg'
+import masterBedroom10 from '@/assets/projects/master-bedroom/master-bedroom-10.jpeg'
+import masterBedroom11 from '@/assets/projects/master-bedroom/master-bedroom-11.jpeg'
+import masterBedroom12 from '@/assets/projects/master-bedroom/master-bedroom-12.jpeg'
+
+import panaroma01 from '@/assets/projects/panorama/panaroma-01.mp4'
+import panaroma02 from '@/assets/projects/panorama/panaroma-02.mp4'
+import panaroma03 from '@/assets/projects/panorama/panaroma-03.png'
 
 
+import commercial01 from '@/assets/projects/commercial/jewellery-01.png'
+import commercial02 from '@/assets/projects/commercial/jewellery-02.png'
+import commercial03 from '@/assets/projects/commercial/jewellery-03.png'
 
 
+import onsite01 from '@/assets/projects/onsite/onsite-01.jpg'
+import onsite02 from '@/assets/projects/onsite/onsite-02.mp4'
+import onsite03 from '@/assets/projects/onsite/onsite-03.jpeg'
+import onsite04 from '@/assets/projects/onsite/onsite-04.jpeg'
+import onsite05 from '@/assets/projects/onsite/onsite-05.jpeg'
+import onsite06 from '@/assets/projects/onsite/onsite-06.jpeg'
+import onsite07 from '@/assets/projects/onsite/onsite-07.jpeg'
+import onsite08 from '@/assets/projects/onsite/onsite-08.jpeg'
+import onsite09 from '@/assets/projects/onsite/onsite-09.jpeg'
+import onsite10 from '@/assets/projects/onsite/onsite-10.jpeg'
+import onsite11 from '@/assets/projects/onsite/onsite-11.jpeg'
+import onsite12 from '@/assets/projects/onsite/onsite-12.jpeg'
+import onsite13 from '@/assets/projects/onsite/onsite-13.jpeg'
 
 
+export const projects: {
+    projectName: string;
+    images: string[];
+    videos?: string[];
+}[] = [
 
-export const projects = [
-
-    {
-        projectName: 'isoView',
-        images:
-            [
-                isoView01,
-                isoView02,
-                isoView03,
-                isoView04,
+        {
+            projectName: 'isoView',
+            images:
+                [
+                    isoView01,
+                    isoView02,
+                    isoView03,
+                    isoView04,
+                ]
+        },
+        {
+            projectName: 'duplex',
+            images: [
+                duplex01,
+                duplex02,
+                duplex03,
+                duplex04,
+                duplex05,
+                duplex06,
+                duplex07,
+                duplex08,
+                duplex09,
+                duplex10,
+                duplex11,
+                duplex12,
+                duplex13,
+                duplex14,
+                duplex15,
+                duplex16,
+                duplex17,
+                duplex18,
+                duplex19,
+                duplex20,
+                duplex21,
+                duplex22,
+            ]
+        },
+        {
+            projectName: 'kitchen',
+            images: [
+                kitchen01,
+                kitchen02,
+                kitchen03,
+                kitchen04,
+                kitchen05,
+                kitchen06,
+                kitchen07,
+            ]
+        },
+        {
+            projectName: 'elevation',
+            images: [
+                elevation01,
+                elevation02,
+                elevation03,
+            ]
+        },
+        {
+            projectName: 'render',
+            images: [
+                render01,
+                render02,
+                render03,
+                render04,
+            ]
+        },
+        {
+            projectName: 'masterBedroom',
+            images: [
+                masterBedroom01,
+                masterBedroom02,
+                masterBedroom03,
+                masterBedroom04,
+                masterBedroom05,
+                masterBedroom06,
+                masterBedroom07,
+                masterBedroom08,
+                masterBedroom09,
+                masterBedroom10,
+                masterBedroom11,
+                masterBedroom12,
+            ]
+        },
+        {
+            projectName: 'panaroma',
+            images: [
+                panaroma03,
+            ],
+            videos: [
+                panaroma01,
+                panaroma02,
 
             ]
-    },
-    {
-        projectName: 'duplex',
-        images: [
-            duplex01,
-            duplex02,
-            duplex03,
-            duplex04,
-            duplex05,
-            duplex06,
-            duplex07,
-            duplex08,
-            duplex09,
-            duplex10,
-            duplex11,
-            duplex12,
-            duplex13,
-            duplex14,
-            duplex15,
-            duplex16,
-            duplex17,
-            duplex18,
-            duplex19,
-            duplex20,
-            duplex21,
-            duplex22,
-        ]
-    },
-    {
-        projectName: 'kitchen',
-        images: [
-            kitchen01,
-            kitchen02,
-            kitchen03,
-            kitchen04,
-            kitchen05,
-            kitchen06,
-            kitchen07,
-        ]
-    },
-    {
-        projectName: 'elevation',
-        images: [
-            elevation01,
-            elevation02,
-            elevation03,
-        ]
-    },
-    {
-        projectName: 'render',
-        images: [
-            render01,
-            render02,
-            render03,
-            render04,
-        ]
-    }
 
-];
+        },
+        {
+            projectName: 'commercial',
+            images: [
+                commercial01,
+                commercial02,
+                commercial03
+            ]
+        },
+        {
+            projectName: 'onsite',
+            images: [
+                onsite01,
+                onsite03,
+                onsite04,
+                onsite05,
+                onsite06,
+                onsite07,
+                onsite08,
+                onsite09,
+                onsite10,
+                onsite11,
+                onsite12,
+                onsite13,
+            ],
+            videos: [
+                onsite02,
+
+            ]
+        }
+    ];
