@@ -12,7 +12,7 @@ defineProps<{
     <div class="mx-auto">
 
         <div :onclick="`${projectName}.showModal()`"
-            class="cursor-pointer mx-auto card max-w-96 bg-indigo-400 shadow-xl">
+            class="cursor-pointer mx-auto card max-w-96 bg-accent shadow-xl">
             <figure><img :src="images[0]" alt="Shoes" />
             </figure>
             <div class="card-body">
